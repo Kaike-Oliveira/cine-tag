@@ -1,7 +1,5 @@
 .footer {
   background-color: var(--black);
-  position: absolute;
-  bottom: 0;
   height: 88px;
   width: 100%;
   display: flex;
