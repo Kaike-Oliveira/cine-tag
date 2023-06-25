@@ -5,11 +5,19 @@ import styles from './Home.module.css';
 import Banner from "components/Banner";
 import Card from "components/Card";
 import Title from "components/Title";
-
-// Movies
-import movies from 'json/db.json';
+import { useEffect, useState } from 'react';
 
 export const Home = () => {
+  const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    fetch('https://my-json-server.typicode.com/Kaike-Oliveira/cinetag-api/movies')
+    .then(response => response.json())
+    .then(data => {
+      setMovies(data)
+    })
+  }, [])
+  
   return (
     <>
       <Banner image="home" />
@@ -18,7 +26,7 @@ export const Home = () => {
       </Title>
       <section className={styles.container}>
         {movies.map((movie) => {
-          return <Card title={movie.titulo} id={movie.id} cover={movie.capa} key={movie.id} />
+          return <Card title={movie.title} id={movie.id} cover={movie.cover} key={movie.id} />
         })}
       </section>
     </>

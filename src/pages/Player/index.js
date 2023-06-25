@@ -2,13 +2,27 @@ import Banner from 'components/Banner';
 import styles from './Player.module.css';
 import Title from 'components/Title';
 import { useParams } from 'react-router-dom';
-import movies from 'json/db.json';
+import NotFound from 'pages/NotFound';
+import { useEffect, useState } from 'react';
 
 const Player = () => {
+  const [ movie, setMovie ] = useState()
+
   const params = useParams();
-  const movie = movies.find((movie) => (
-    movie.id === Number(params.id)
-  ))
+
+  useEffect(() => {
+    fetch(`https://my-json-server.typicode.com/Kaike-Oliveira/cinetag-api/movies?id=${params.id}`)
+    .then(response => response.json())
+    .then(data => {
+      setMovie(...data)
+    })
+  }, [params.id])
+
+  if (!movie) {
+    return (
+      <NotFound />
+    )
+  }
 
   return (
     <>
