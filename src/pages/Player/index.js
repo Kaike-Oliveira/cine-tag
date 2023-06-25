@@ -1,15 +1,23 @@
-import Banner from 'components/Banner';
-import styles from './Player.module.css';
-import Title from 'components/Title';
-import { useParams } from 'react-router-dom';
-import NotFound from 'pages/NotFound';
+// Core
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+// Style
+import styles from './Player.module.css';
+
+// Components
+import Banner from 'components/Banner';
+import Title from 'components/Title';
+
+// Pages
+import NotFound from 'pages/NotFound';
 
 const Player = () => {
   const [ movie, setMovie ] = useState()
 
   const params = useParams();
 
+  // Fetch the movie player
   useEffect(() => {
     fetch(`https://my-json-server.typicode.com/Kaike-Oliveira/cinetag-api/movies?id=${params.id}`)
     .then(response => response.json())

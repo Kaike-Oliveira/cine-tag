@@ -1,8 +1,11 @@
+// Core
 import { createContext, useContext, useState } from "react";
 
+// Create context
 export const FavoritesContext = createContext();
 FavoritesContext.displayName = "Favorites";
 
+// Provider
 export default function FavoritesProvider({ children }) {
   const [favorite, setFavorite] = useState([]);
 
@@ -15,6 +18,7 @@ export default function FavoritesProvider({ children }) {
   )
 }
 
+// useContext
 export function useFavoriteContext() {
   const { favorite, setFavorite } = useContext(FavoritesContext);
 

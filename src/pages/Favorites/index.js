@@ -1,8 +1,13 @@
-import Banner from 'components/Banner';
+// Core
+import { useFavoriteContext } from 'contexts/Favorites';
+
+// Style
 import styles from './Favorites.module.css';
+
+// Components
+import Banner from 'components/Banner';
 import Card from 'components/Card';
 import Title from 'components/Title';
-import { useFavoriteContext } from 'contexts/Favorites';
 
 const Favorites = () => {
   const { favorite } = useFavoriteContext();

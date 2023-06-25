@@ -1,3 +1,6 @@
+// Core
+import { useEffect, useState } from 'react';
+
 // Style
 import styles from './Home.module.css';
 
@@ -5,11 +8,11 @@ import styles from './Home.module.css';
 import Banner from "components/Banner";
 import Card from "components/Card";
 import Title from "components/Title";
-import { useEffect, useState } from 'react';
 
 export const Home = () => {
   const [movies, setMovies] = useState([])
 
+  // Fetch the movie list
   useEffect(() => {
     fetch('https://my-json-server.typicode.com/Kaike-Oliveira/cinetag-api/movies')
     .then(response => response.json())

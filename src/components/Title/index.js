@@ -1,3 +1,4 @@
+// Style
 import styles from './Title.module.css';
 
 const Title = ({ children }) => {
