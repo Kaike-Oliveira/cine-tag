@@ -6,7 +6,7 @@ Welcome to Cine Tag! This project is a React application developed by Kaike Cesa
 | -------------  | --- |
 | :sparkles: Name        | **Cine Tag**
 | :label: Technologies | React, Javascript, css, (tecnologias utilizadas)
-| :rocket: URL         | https://url-deploy.com.br
+| :rocket: URL         | https://cine-tag-pi.vercel.app
 
 ## Installation
 
