@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Cine Tag
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Cine Tag! This project is a React application developed by Kaike Cesar during the ALURA course. Cine Tag allows users to explore and discover movies and create personalized tags to categorize and organize their favorite films.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To run Cine Tag locally, follow these steps:
 
-### `yarn start`
+### `Clone`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```git clone https://github.com/Kaike-Oliveira/cine-tag.git```
 
-### `yarn test`
+Navigate to the project directory:
+```cd cine-tag```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install project dependencies:
 
-### `yarn build`
+```yarn install```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```yarn start```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open your web browser and visit http://localhost:3000 to access Cine Tag.
 
-### `yarn eject`
+## Feature
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Routes**: Navigate through different pages using React Router for a seamless user experience.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Context API**: Utilize React's Context API for managing global state and sharing data across components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Favorite and Unfavorite Movies**: Mark movies as favorites and unfavorite them to keep track of your preferred films.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+* **React**
+* **JavaScript**
+* **React-Router-Dom**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Used
+https://my-json-server.typicode.com/Kaike-Oliveira/cinetag-api/movies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
 
-### Code Splitting
+I would like to express my gratitude to ALURA for providing the course that helped me develop my skills in React and JavaScript, enabling me to create this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
+For any questions or inquiries, please reach out to Kaike Cesar at kaikeOliveira196@gmail.com.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for your interest in Cine Tag! Enjoy exploring and organizing your movie collection with personalized tags.
