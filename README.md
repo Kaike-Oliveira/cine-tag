@@ -2,6 +2,12 @@
 
 Welcome to Cine Tag! This project is a React application developed by Kaike Cesar during the ALURA course. Cine Tag allows users to explore and discover movies and create personalized tags to categorize and organize their favorite films.
 
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Name        | **Cine Tag**
+| :label: Technologies | React, Javascript, css, (tecnologias utilizadas)
+| :rocket: URL         | https://url-deploy.com.br
+
 ## Installation
 
 To run Cine Tag locally, follow these steps:
