@@ -8,6 +8,8 @@ Welcome to Cine Tag! This project is a React application developed by Kaike Cesa
 | :label: Technologies | React, Javascript, css, (tecnologias utilizadas)
 | :rocket: URL         | https://cine-tag-pi.vercel.app
 
+![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+
 ## Installation
 
 To run Cine Tag locally, follow these steps:
