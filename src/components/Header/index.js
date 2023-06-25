@@ -21,7 +21,7 @@ const Header = () => {
         <HeaderLink url='./'>
           Home
         </HeaderLink>
-        <HeaderLink url='./favorite'>
+        <HeaderLink url='./favorites'>
           Favorite
         </HeaderLink>
       </nav>

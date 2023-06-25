@@ -21,7 +21,7 @@ export function useFavoriteContext() {
   function addFavorite(newFavorite) {
     const repetedFavorite = favorite.some(item => item.id === newFavorite.id)
 
-    let newList = {...favorite}
+    let newList = [...favorite];
 
     if (!repetedFavorite) {
       newList.push(newFavorite);

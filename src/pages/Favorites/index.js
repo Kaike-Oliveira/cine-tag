@@ -2,8 +2,11 @@ import Banner from 'components/Banner';
 import styles from './Favorites.module.css';
 import Card from 'components/Card';
 import Title from 'components/Title';
+import { useFavoriteContext } from 'contexts/Favorites';
 
 const Favorites = () => {
+  const { favorite } = useFavoriteContext();
+
   return (
     <>
       <Banner image="favorites" />
@@ -11,7 +14,9 @@ const Favorites = () => {
         <h1>My favorites</h1>
       </Title>
       <section className={styles.container}>
-        <Card id="1" title="title" cover="nay" />
+        {favorite.map((fav) => (
+          <Card title={fav.title} id={fav.id} cover={fav.cover} key={fav.id} />
+        ))}
       </section>
     </>
   )
